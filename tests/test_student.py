@@ -56,7 +56,20 @@ def test_get_student_with_more_classes():
         ["mathematics", "foundations of computing"]
     )
 
+    results=get_student_with_more_classes(charles,ada)
     # TODO: write assertions
+    assert results==ada
 
 
 # TODO: Write additional tests to reach 100% test coverage
+def test_get_student_a_more_classes():
+    charles = create_student("Charles Babbage", "senior", ["mechanical engineering","science","biology"])
+    ada = create_student(
+        "Ada Lovelace",
+        "sophomore",
+        ["mathematics", "foundations of computing"]
+    )
+
+    results=get_student_with_more_classes(charles,ada)
+    # TODO: write assertions
+    assert results==charles
